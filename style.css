@@ -277,3 +277,83 @@ input[type="submit"]:hover {
   background-color: rgb(148, 192, 169);
   color: #111;
 }
+
+/* ************MEDIA QUERIES********** */
+
+@media screen and (max-width: 1200px) {
+  .barberContainer {
+    width: 90%;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .headSection {
+    display: block;
+    width: 90%;
+    margin: 0 auto;
+  }
+  .headLeft {
+    justify-content: flex-start;
+    padding-bottom: 30px;
+  }
+  .headRight {
+    min-height: 600px;
+  }
+
+  .barberContainer {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .barberContainer {
+    grid-template-columns: 1fr;
+  }
+
+  .priceContainer h2 {
+    font-size: 50px;
+  }
+
+  .formSection {
+    display: block;
+  }
+
+  .formRightContainer h2 {
+    font-size: 50px;
+  }
+
+  input[type="submit"] {
+    margin-bottom: 10px;
+  }
+
+  @media screen and (max-width: 400px){
+    .headLeftContainer h2 {
+      font-size: 36px;
+    }
+
+    .headRight {
+      min-height: 300px;
+    }
+
+    .barberSection h2 {
+      font-size: 36px;
+      padding: 0 30px;
+    }
+
+    .priceContainer {
+      padding: 0 10px;
+    }
+
+    .priceContainer h2 {
+      font-size: 36px;
+    }
+
+    .formLeft {
+      min-height: 300px;
+    }
+
+    .formRightContainer h2 {
+      font-size: 30px;
+      padding: 0 ;
+    }
+  }
