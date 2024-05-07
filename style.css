@@ -1,0 +1,279 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Rock+Salt&display=swap");
+
+@font-face {
+  font-family: "montserrat";
+  src: url(./assets/fonts/Montserrat-VariableFont_wght.ttf);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #fefefe;
+}
+
+h2 {
+  font-family: "montserrat", verdana;
+}
+
+h3 {
+  font-family: "montserrat", verdana;
+}
+
+h4 {
+  font-family: "montserrat", verdana;
+}
+
+p {
+  font-family: "Open Sans", verdana;
+}
+
+button {
+  font-family: "Open Sans", verdana;
+}
+
+/* ***********HEADSECTION*********** */
+
+.headSection {
+  min-height: 610px;
+  display: grid;
+  grid-template-columns: 50% 50%;
+  color: #111;
+}
+
+.headLeft {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.headLeftContainer h3 {
+  text-transform: uppercase;
+  font-size: 18px;
+  letter-spacing: 3px;
+  color: #111;
+}
+
+.headLeftContainer h2 {
+  font-size: 48px;
+  color: #111;
+  margin: 20px 0 40px;
+}
+
+.headLeftContainer button {
+  background-color: #111;
+  color: #fefefe;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-weight: bold;
+  padding: 20px 40px;
+  border-radius: 4px;
+  border: none;
+}
+
+.headLeftContainer button:hover {
+  cursor: pointer;
+  background-color: rgb(148, 192, 169);
+}
+
+.headRight {
+  background-image: url(./assets/img/header\ barber.jpeg);
+  background-size: cover;
+  background-position: center;
+}
+
+/* **********BARBERSECTION************ */
+
+.barberSection {
+  background-color: #9d9570;
+  padding: 15px 0 60px;
+}
+
+.barberSection h2 {
+  font-size: 60px;
+  color: #fefefe;
+  text-align: center;
+  padding-bottom: 70px;
+}
+
+.barberContainer {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  gap: 20px;
+  width: 70%;
+  margin: 0 auto;
+  min-height: 1050px;
+}
+
+.barberImg {
+  background: url(./assets/img/barber.jpeg) center/cover;
+}
+
+.barberImg1 {
+  background: url(./assets/img/barber1.jpeg) center/cover;
+}
+
+.barberImg2 {
+  background: url(./assets/img/barber2.jpeg) center/cover;
+}
+
+.barberImg3 {
+  background: url(./assets/img/barber3.jpeg) center/cover;
+}
+
+.barberImg4 {
+  background: url(./assets/img/barber4.jpeg) center/cover;
+}
+
+.barberImg5 {
+  background: url(./assets/img/barber5.jpeg) center/cover;
+}
+
+.barberTxt {
+  margin: 260px 0 30px 30px;
+}
+
+.barberTxt h4 {
+  text-transform: uppercase;
+  color: #fefefe;
+  font-size: 20px;
+  padding-bottom: 20px;
+}
+
+.barberTxt p:first-of-type {
+  text-transform: capitalize;
+  color: #9d9570;
+  font-weight: bold;
+}
+
+.barberTxt p:last-of-type {
+  color: #fefefe;
+  padding: 20px 0;
+}
+
+.barberTxt i {
+  color: #9d9570;
+  font-size: 25px;
+  padding: 5px;
+}
+
+.barberTxt i:hover {
+  cursor: pointer;
+}
+
+/* ***********PRICESECTION********* */
+
+.priceSection {
+  background: url(./assets/img/barber\ price.jpeg) center/cover;
+  min-height: 800px;
+  color: #fefefe;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.priceContainer {
+  text-align: center;
+  padding: 0 80px;
+}
+
+.priceContainer h2 {
+  font-size: 60px;
+}
+
+.priceContainer p {
+  font-size: 20px;
+  margin: 40px 0;
+}
+
+.priceContainer button {
+  padding: 20px 30px;
+  border-radius: 5px;
+  text-transform: uppercase;
+  font-family: "Open Sans", verdana;
+  font-size: 14px;
+  letter-spacing: 1px;
+  font-weight: bold;
+  margin: 10px;
+}
+
+#buttonPrice1 button {
+  border: none;
+}
+
+#buttonPrice1 button:hover {
+  cursor: pointer;
+  background-color: rgb(148, 192, 169);
+  color: #fefefe;
+}
+
+#buttonPrice2 button {
+  background: transparent;
+  border: 2px solid #fefefe;
+  color: #fefefe;
+}
+
+#buttonPrice2 button:hover {
+  cursor: pointer;
+  background-color: rgb(148, 192, 169);
+  border: 2px solid rgb(148, 192, 169);
+}
+
+/* ************FORMSECTION************* */
+
+.formSection {
+  display: grid;
+  grid-template-columns: 50% 50%;
+}
+
+.formLeft {
+  background: url(./assets/img/barber\ form.jpeg) center/cover;
+  min-height: 620px;
+}
+
+.formRight {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(41, 45, 51);
+  padding: 0 50px;
+}
+
+.formRightContainer h2 {
+  font-size: 60px;
+  color: #fefefe;
+  font-family: "montserrat", verdana;
+  padding-bottom: 30px;
+}
+
+form input,
+textarea {
+  width: 100%;
+  padding: 10px 20px;
+  margin-top: 20px;
+  font-family: "Open Sans", verdana;
+  font-size: 18px;
+  outline: none;
+}
+
+form textarea {
+  height: 150px;
+  resize: none;
+}
+
+input[type="submit"] {
+  background-color: #9d9570;
+  border: none;
+  border-radius: 5px;
+  color: #fefefe;
+}
+
+input[type="submit"]:hover {
+  cursor: pointer;
+  background-color: rgb(148, 192, 169);
+  color: #111;
+}
